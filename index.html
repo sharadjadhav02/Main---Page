@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Team Shinchan</title>
+</head>
+<body class="antialiased lg:overflow-hidden">
+    
+
+    <!-- header -->
+    <header class="md:flex justify-between items-center font-sans bg-black border-b-4 border-b-red-600 text-white">
+        <div class="flex justify-between px-6 py-4 lg:pl-24" >
+            <h1 class="uppercase font-sans font-bold xl:text-xl">
+                <a href="./index.html">Team Shinchan</a>
+            </h1>
+
+
+            <!-- menu icon -->
+            <div class="block md:hidden" onclick="nav()">
+                <div id="bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                      
+                </div>
+                <div class="opacity-0 rotate-180" id="plus">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
+                      </svg>                      
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <!-- medium to large devices -->
+            <div class="hidden md:flex pr-24">
+                <nav class="flex list-none space-x-14">
+                    <li class="hover:text-teal-400 duration-150">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="hover:text-teal-400 duration-150">
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li class="hover:text-teal-400 duration-150">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </nav>
+            </div>
+
+
+            <!-- mobile devices -->
+            <div class="block fixed w-screen uppercase bg-neutral-700 text-center h-screen md:hidden" id="mobile-nav">
+                <nav class="list-none my-8 space-y-12 let">
+                    <li class=""><a href="./index.html" class="">Home</a></li>
+                    <li class=""><a href="./" class="">About</a></li>
+                    <li class=""><a href="./" class="">Contact</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- section -->
+    <section class="text-center text-white px-6 h-screen sm:grid sm:items-center sm:content-center py-40 sm:py-0">
+        <div class="">
+            <h1 class="animate__animated animate__fadeInDown text-2xl font-semibold lg:text-3xl xl:text-4xl">
+                Team Shinchan Welcomes You ! <br> Click One of The Buttons Below to Get Started.
+            </h1>
+        </div>
+        <div class=" lg:my-5 lg:text-lg py-8">
+            <button class="animate__animated animate__fadeInDown animate__delay-1s mx-2 my-2" onclick="window.location.href='https://sharadjadhav02.github.io/Get-Notes/index.html'">
+                Get Notes
+            </button>
+            <button class="animate__animated animate__fadeInUp animate__delay-1s mx-2 my-2" onclick="window.location.href='./roadmaps.html'">
+                Get Roadmaps
+            </button>
+        </div>
+    </section>
+
+    
+</body>
+</html>

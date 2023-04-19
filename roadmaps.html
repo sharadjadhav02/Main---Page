@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="roadmaps.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Gets</title>
+</head>
+<body class="antialiased bg-repeat-y md:bg-no-repeat md:bg-cover">
+    <header class="md:flex justify-between items-center bg-black border-b-4 border-b-red-600 text-white">
+        <div class="flex justify-between px-6 py-4 lg:pl-24" >
+            <h1 class="uppercase font-bold text-xl">
+                <a href="./index.html">Team Shinchan</a>
+            </h1>
+
+
+            <!-- menu icon -->
+            <div class="block md:hidden" onclick="nav()">
+                <div id="bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                      
+                </div>
+                <div class="opacity-0 rotate-180" id="plus">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
+                      </svg>                      
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <!-- medium to large devices -->
+            <div class="hidden md:flex pr-24">
+                <nav class="flex list-none space-x-14">
+                    <li class="hover:text-teal-400 duration-150">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="hover:text-teal-400 duration-150">
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li class="hover:text-teal-400 duration-150">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </nav>
+            </div>
+
+
+            <!-- mobile devices -->
+            <div class="block fixed w-screen uppercase bg-neutral-700 text-center h-screen md:hidden" id="mobile-nav">
+                <nav class="list-none my-8 space-y-12 let">
+                    <li class=""><a href="./index.html" class="">Home</a></li>
+                    <li class=""><a href="./" class="">About</a></li>
+                    <li class=""><a href="./" class="">Contact</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="font-sans">
+        <div class="flex flex-wrap justify-center">
+
+
+
+            <!-- heading -->
+            <div class="flex flex-wrap justify-center mt-28 mb-14">
+                <h1 class="text-white text-2xl md:text-4xl xl:text-5xl font-bold text-center">
+                    Get Roadmaps With One Click Download Option !
+                </h1>
+            </div>
+            
+
+
+
+            <!-- cards -->
+            <div class="flex flex-wrap justify-center content-end mx-4 mb-16" id="container">
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/python.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for python
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1RK_se6okneBmHT2vAGm49JxJg3FKEHEr'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/java.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for java
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=19mbbX5JVdOfCct7jnW3P0BUDDZDJrDnE'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 mt-8 rounded-full">
+                            <img src="./assets/1200px-Node.js_logo.svg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for node js
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1wp8Y7Iq_pT4uFaRaj7zpX9rfyeoP2YEZ'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/angular.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for angular
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1kraYEdjkmP8nPS2aqYiYAcvMKQWGia8C'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/aspnet.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for Aspnet core
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1zZU8NxJIlFIEb78oQ2A2d4K3_eZsGEMn'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/blockchain.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for block chain
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1WXTyVLIGwR2h1Us8buuC82hBEpwSpxpK'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/cyber-security.png" class="drop-shadow-sm" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for cyber security
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=138PSEMrXrKc2baWAY7FaxKspiSaRracM'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/data-science.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for computer science
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1gi3lI5-pNqT5s1ZDQkDIN_1kJ52JUVpO'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/devops.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for devops
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1i3mVrAPHLBQtlsDtnUQm2aednYZ-KK5G'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/flutter5786.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for flutter
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1jvcb8wJPxls0V1Xq8QX2pfoslc4G0lnW'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/front-end.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for frontend performance
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1PkSj956G8hswYSnl-OJAt0PEWd1tJKRb'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/GraphQL_Logo.svg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for graphql
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=16Jc19sJNbDc8aSMETE8Bxrci90SUDeBj'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/js.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for javascript
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1iz756T1H3_WPk0Nw7wZVcVZ_nXx_0voX'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/Kubernetes_logo_without_workmark.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for kubernetes
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1PYJLeUsBequmMl2NKQp46yekk3ZmgX0X'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/React-icon.svg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for react
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=16thOVSX2wseXF4ebMqjznykrHtvXgOad'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/62eaeb8a0e04522f1c18fab3_mongodb.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4  capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for mongodb
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=16xiIweUvSZcfDRttgbYCbvSs5u211ZVD'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/ux.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4  capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for frontend
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1uWNPNtMHhMxP4QVrkF_AzWbYx8S3lZL2'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/Vue.js_Logo_2.svg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for vue
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1iT4-9d92YI2V5oqxUYUT1XdDBSiBbc3a'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/web.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for backend
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1N31M3f8MKQnAIkyQrujOn2J4ou8tnco4'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/installation.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for Design System
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1t64AJTs3Js_A3bLatPsRZINM-JKUGLEj'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-48 h-56 m-4 rounded-lg hover:scale-105 duration-150">
+                    <div class="h-1/2 flex justify-center items-center">
+                        <div class="w-16 h-16 rounded-full">
+                            <img src="./assets/settings.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-1/4 capitalize flex justify-center items-center text-center">
+                        <h1>
+                            roadmap for  System Design
+                        </h1>
+                    </div>
+                    <div class="h-1/4 flex items-center pb-4 text-white" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1koyn6qkJUlaT8blzxPGJQHTKtjOUERBv'">
+                        <button class="w-full mx-4 bg-blue-500 rounded-full flex items-center content-center justify-center hover:bg-blue-400">
+                            Download <i class="fas fa-download ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 

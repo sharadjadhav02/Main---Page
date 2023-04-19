@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+
+*:not(a){
+    transition: all 0.5s ease;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+body.overflow{
+    overflow: auto;
+}
+
+body{
+    background: url('./assets/36100257_ece2.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+}
+
+header div h1 {
+    font-family: 'manrope',sans-serif;
+}
+
+a:not(h1 > a){
+    font-family: 'quicksand',sans-serif;
+    font-weight: 600;
+}
+
+#mobile-nav.visible{
+    left: 0%;
+}
+
+#mobile-nav{
+    font-weight: 400;
+    overflow: hidden;
+    left: 100%;
+    z-index: 9999;
+    letter-spacing: 0.25rem;
+}
+
+
+section > div > button{
+    width: 200px;
+    padding: 0.4rem 0.5rem;
+    border-radius: 800px;
+    border: 2px solid white;
+    font-family: 'be vietnam pro', sans-serif;
+    text-transform: capitalize;
+    transition: all 0.13s linear;
+    /* background: linear-gradient(210deg, rgb(32,64,255), dodgerblue); */
+}
+
+section > div > h1{
+    font-family: 'be vietnam pro',sans-serif;
+}
+
+button:hover{
+    background: white;
+    color: black;
+}
